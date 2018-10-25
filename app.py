@@ -42,14 +42,14 @@ fi
     return shell_script
 
 @app.route('/')
-@app.route('/<host>/<ip>')
-def main(host=None, ip=None):
-    if host==None or ip==None:
+@app.route('/<host>/<port>')
+def main(host=None, port=None):
+    if host==None or port==None:
         response = make_response(usgae)
         response.headers["content-type"] = "text/plain"
         return response
     else:
-        shell_script = generate_shell_script(host, ip)
+        shell_script = generate_shell_script(host, port)
         response = make_response(usgae + shell_script)
         response.headers["content-type"] = "text/plain"
         return  response
