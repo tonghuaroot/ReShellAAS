@@ -1,4 +1,6 @@
 # ReShellAAS
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftonghuaroot%2FReShellAAS.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftonghuaroot%2FReShellAAS?ref=badge_shield)
+
 Reverse Shell as a Service
 反弹shell即服务
 
@@ -36,3 +38,7 @@ crontab -e
 - 适应多场景的反弹shell语法
 - etc...
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftonghuaroot%2FReShellAAS.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftonghuaroot%2FReShellAAS?ref=badge_large)
